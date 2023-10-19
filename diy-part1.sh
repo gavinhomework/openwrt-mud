@@ -17,5 +17,6 @@ sed -i 's/KERNEL_PATCHVER:=6.1/KERNEL_PATCHVER:=5.4/g' target/linux/x86/Makefile
 # Add a feed source
 
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-sed -i "/helloworld/d" "feeds.conf.default"
+#sed -i "/helloworld/d" "feeds.conf.default"
 echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf.default"
+echo "src-git openclash https://github.com/vernesong/OpenClash.git" >> "feeds.conf.default"
